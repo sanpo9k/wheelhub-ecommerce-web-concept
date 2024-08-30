@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(62, 55, 55, 0.525);
+    min-height: 90px;
+    min-width: 100%;
+    backdrop-filter: blur(1px);
+}
+
+body{
+    background-image: url(./Assets/desktop-wallpaper-if-you-have-a-black-or-jet-black-iphone-7-you-need-these-pitch-black-thumbnail.jpg)
+}
+
+.navbar-wrapper img{
+    width: 10%;
+}
+
+.menuBtn{
+    display: flex;
+}
+
+.menuBtn img{
+    width: 18px;
+    margin: 5px;
+}
+
+ul{
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+ul li a:hover{
+    font-weight: bolder;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 5px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.menuBtn button{
+    display: inline-block;
+    padding: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgba(62, 55, 55, 0.525);
+    min-width: 158px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown:hover .menuBtn h1{
+    color: aqua;
+}
+
+span{
+    color: aqua;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.car {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%; 
+    margin-bottom: 20px;
+}
+
+.car:hover{
+    transform: scale(1);
+    border-color: aqua;
+}
+
+.car-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.car ul li{
+    list-style-type: disc;
+}
+
+body{
+    background-image: url(./Assets/External/desktop-wallpaper-if-you-have-a-black-or-jet-black-iphone-7-you-need-these-pitch-black-thumbnail.jpg)
+}
+
+#header{
+    margin: 50px;
+}
+
+footer{
+    height: 80px;
+    padding-top: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.social img{
+    width: 30px;
+}

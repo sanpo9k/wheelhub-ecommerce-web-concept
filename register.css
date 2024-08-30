@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(./Assets/joinUsSectionBaner.jpeg);
+  background-size: cover;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(62, 55, 55, 0.525);
+  min-height: 90px;
+  min-width: 100%;
+  backdrop-filter: blur(1px);
+}
+
+.navbar-wrapper img {
+  width: 10%;
+  margin: 0;
+}
+
+.menuBtn {
+  display: flex;
+}
+
+.menuBtn img {
+  width: 18px;
+  margin: 5px;
+}
+
+ul {
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+ul li a:hover {
+  font-weight: bolder;
+  background-color: aqua;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.menuBtn button {
+  display: inline-block;
+  padding: 15px;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(62, 55, 55, 0.525);
+  min-width: 158px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .menuBtn h1 {
+  color: aqua;
+}
+
+span {
+  color: aqua;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.register-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.register-card {
+  background-color: rgba(62, 55, 55, 0.525);
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+}
+
+.input-box input:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.7); 
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gender {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: aqua;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background-color: #0099ff;
+}
+
+footer{
+  height: 80px;
+  padding-top: 5px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social img{
+  width: 30px;
+}

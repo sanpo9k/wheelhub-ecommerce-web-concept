@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(./Assets/External/desktop-wallpaper-if-you-have-a-black-or-jet-black-iphone-7-you-need-these-pitch-black-thumbnail.jpg);
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(62, 55, 55, 0.525);
+    min-height: 90px;
+    min-width: 100%;
+    position: absolute;
+    backdrop-filter: blur(1px);
+}
+
+
+.navbar-wrapper img{
+    width: 10%;
+    margin: 0;
+}
+
+.menuBtn{
+    display: flex;
+}
+
+.menuBtn img{
+    width: 18px;
+    margin: 5px;
+}
+
+ul{
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+ul li a:hover{
+    font-weight: bolder;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 5px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.menuBtn button{
+    display: inline-block;
+    padding: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgba(62, 55, 55, 0.525);
+    min-width: 158px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown:hover .menuBtn h1{
+color: aqua;
+}
+
+span{
+    color: aqua;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.carousel-img img{
+    width: 100%;
+    display: none;
+}
+
+.carousel-img img.active{
+    display: inline-block;
+}
+
+.prev{
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(62, 55, 55, 0.525);
+    border-radius: 5px;
+}
+
+.next{
+    position: absolute;
+    top: 300px;
+    right: 10px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(62, 55, 55, 0.525);
+    border-radius: 5px;
+}
+
+.prev:hover{
+    background-color: aqua;
+}
+
+.next:hover{
+    background-color: aqua;
+}
+
+.headline-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 450px;
+    padding-left: 15px;
+}
+
+.headline-text .upper-text{
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.headline-text .bottom-text{
+    font-weight: bolder;
+}
+
+.article-wrapper{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+}
+
+.separator{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: black;
+    margin-top: -5px;
+}
+
+.article{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.article ul{
+    padding-left: 25px;
+}
+
+.article ul li{
+    list-style-type: disc;
+    padding-left: 5px;
+}
+
+.article img{
+    width: 20%;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.moreBtn{
+ display: flex;
+ justify-content: center;   
+}
+
+.moreBtn button{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(62, 55, 55, 0.525);
+}
+
+.moreBtn a{
+    font-size: 20px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.moreBtn button:hover {
+    background-color: aqua;
+}
+
+footer{
+    height: 80px;
+    padding-top: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social img{
+    width: 30px;
+}
+
+@media (max-width: 1040px) {
+    .headline-text {
+        top: 400px;
+    }
+
+    .headline-text .upper-text {
+        font-size: 40px;
+    }
+
+    .headline-text .bottom-text {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register New</title>
+    <link rel="stylesheet" href="register.css" />
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <h1><a href="home.html">Wheel <span>Hub</span></a></h1>
+        </div>
+        <div class="dropdown">
+          <div class="menuBtn">
+            <h1>Menu</h1>
+            <img src="./Assets/ui/down_down_arrow_white.png" alt="" />
+          </div>
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="home.html">> Home</a></li>
+              <li><a href="promotion.html">> Promotion</a></li>
+              <li><a href="allcars.html">> All Cars</a></li>
+              <li><a href="aboutUs.html">> About Us</a></li>
+              <li><a href="register.html">> Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="register-card-wrapper">
+        <div class="register-card">
+          <form id="registrationForm">
+            <h1>Registration</h1>
+    
+            <div class="input-box">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Enter username">
+              <span id="usernameError" class="error"></span>
+            </div>
+    
+            <div class="input-box">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter email">
+              <span id="emailError" class="error"></span>
+            </div>
+    
+            <div class="input-box">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter password">
+              <span id="passwordError" class="error"></span>
+            </div>
+    
+            <div class="input-box">
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+              <span id="confirmPasswordError" class="error"></span>
+            </div>
+    
+            <div class="gender">
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Female</label>
+              <span id="genderError" class="error"></span>
+            </div>
+
+            <div class="input-box">
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob">
+              <span id="dobError" class="error"></span>
+            </div>
+    
+            <div class="checkbox">
+              <input type="checkbox" id="terms" name="terms">
+              <label for="terms">I accept terms & conditions</label>
+              <span id="termsError" class="error"></span>
+            </div>
+    
+            <button type="submit" class="btn">Register</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Wheel Hub. All rights reserved.</p>
+      <div class="social">
+        <img src="./Assets/External/icons8-instagram-50.png" alt="">
+        <img src="./Assets/External/icons8-facebook-50.png" alt="">
+        <img src="./Assets/External/icons8-twitterx-50.png" alt="">
+      </div>
+  </footer>
+  </body>
+</html>

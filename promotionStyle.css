@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(62, 55, 55, 0.525);
+    min-height: 90px;
+    min-width: 100%;
+    backdrop-filter: blur(1px);
+}
+
+body{
+    background-image: url(./Assets/External/desktop-wallpaper-if-you-have-a-black-or-jet-black-iphone-7-you-need-these-pitch-black-thumbnail.jpg)
+}
+
+.navbar-wrapper img{
+    width: 10%;
+}
+
+.menuBtn{
+    display: flex;
+}
+
+.menuBtn img{
+    width: 18px;
+    margin: 5px;
+}
+
+ul{
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+ul li a:hover{
+    font-weight: bolder;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 5px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.menuBtn button{
+    display: inline-block;
+    padding: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgba(62, 55, 55, 0.525);
+    min-width: 158px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown:hover .menuBtn h1{
+color: aqua;
+}
+
+span{
+    color: aqua;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+#header{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.promotion {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.promotionItem {
+    background-color: rgba(62, 55, 55, 0.525);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex: 1px 1px 300px;
+}
+
+.promotionItem img {
+    max-width: 1100px;
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+.promotionItem h3 {
+    margin-top: 10px;
+}
+
+.promotionItem p {
+    margin-top: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+footer{
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator{
+    background-color: rgba(0, 255, 255, 0.594);
+    min-height: 15px;
+}
+
+.separator p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+footer{
+    height: 80px;
+    padding-top: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social img{
+    width: 30px;
+}
+
+@media screen and (max-width: 1040px) {
+    body {
+        font-size: 12px; 
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .promotionItem {
+        width: 100%;
+    }
+
+    .promotionItem img{
+        width: 100%;
+    }
+}
